@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 42.5%;
+  }
+}
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("fonts/MyriadPro-Regular.otf") format("opentype");
+}
+:root {
+  --font1: "Myriad Pro", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #def4db;
+}
+
+.soon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.soon img {
+  width: 40rem;
+}
+.soon p {
+  font-size: 5rem;
+  font-family: var(--font1);
+  font-weight: 600;
+  background: linear-gradient(to right, #5ac74b, #3f8b35);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}/*# sourceMappingURL=style.css.map */
