@@ -23,34 +23,102 @@ html {
 }
 
 :root {
-  --font1: "Myriad Pro", sans-serif;
+  --font: "Myriad Pro", sans-serif;
+  --bg-color: #f7f7f7;
+  --color-green: #7bd26f;
+  --color-white: #ffffff;
+  --padding: 0 10rem;
+}
+
+@media screen and (max-width: 1100px) {
+  :root {
+    --padding: 0 4rem;
+  }
 }
 
 body {
+  background-image: --color-white;
+  background-size: cover;
+  font-family: var(--font);
   height: 100vh;
-  width: 100vw;
-  background-color: #eff9ed;
+  overflow: hidden;
+  position: relative;
 }
 
-.soon {
-  width: 100%;
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  width: 100%;
+  overflow-y: scroll;
+}
 
-  img {
-    width: 40rem;
+.underline {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.bg-green {
+  background-image: linear-gradient(
+    to top,
+    var(--color-green) 50%,
+    transparent 50%
+  );
+}
+
+.section1 {
+  padding: 5rem 0 0 0;
+  background-image: linear-gradient(
+    to bottom,
+
+    transparent 90%,
+    var(--bg-color) 10%
+  );
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+    padding: var(--padding);
   }
 
-  p {
+  .logo {
+    height: 8rem;
+    img {
+      height: 100%;
+    }
+  }
+
+  .menubar {
+    font-size: 4rem;
+    cursor: pointer;
+  }
+
+  .title1 {
     font-size: 5rem;
-    font-family: var(--font1);
     font-weight: 600;
-    background: linear-gradient(to right, #5ac74b, #3f8b35);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    padding: var(--padding);
+    margin-bottom: 13rem;
   }
+
+  .section1-img {
+    display: flex;
+    padding: 0rem 1rem;
+    img {
+      margin-left: auto;
+      width: 100rem;
+      max-width: 100%;
+      max-height: 60rem;
+      object-fit: cover;
+    }
+  }
+}
+
+.section2 {
+  width: 100%;
+  height: 100px;
+
+  background-color: var(--bg-color);
 }
