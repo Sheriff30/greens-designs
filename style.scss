@@ -17,13 +17,8 @@ html {
   }
 }
 
-@font-face {
-  font-family: "Myriad Pro";
-  src: url("fonts/MyriadPro-Regular.otf") format("opentype");
-}
-
 :root {
-  --font: "Myriad Pro", sans-serif;
+  --font: "Myriad Pro", Arial, sans-serif;
   --bg-color: #f7f7f7;
   --color-green: #7bd26f;
   --color-white: #ffffff;
@@ -33,6 +28,12 @@ html {
   --padding-top: 10rem;
   --fade: #091407c8;
   --G-icon: rgb(206, 238, 201);
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("myriad-pro.woff2") format("woff2"),
+    url("myriad-pro.woff") format("woff"); /* Older Browsers */
 }
 
 @media screen and (max-width: 1100px) {
