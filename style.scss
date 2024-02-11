@@ -48,20 +48,13 @@ html {
 
 body {
   font-family: var(--font);
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
+  height: fit-content;
 }
 
 .container {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
   height: 100%;
   max-width: 200rem;
   width: 100%;
-  overflow-y: scroll;
 }
 
 .underline {
