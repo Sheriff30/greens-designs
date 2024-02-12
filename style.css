@@ -47,6 +47,8 @@ body {
   font-family: var(--font);
   height: -moz-fit-content;
   height: fit-content;
+  display: flex;
+  justify-content: center;
 }
 
 .container {
@@ -272,6 +274,75 @@ body {
 .section2 .slide-container .fade .title-secondary {
   font-size: 2.5rem;
   font-weight: 400;
+}
+
+.gallery {
+  padding-top: var(--padding-top);
+  width: 100%;
+}
+.gallery .title-primary {
+  font-size: 3rem;
+  padding: var(--padding);
+  margin-bottom: 5rem;
+}
+.gallery .wins-content {
+  max-width: 100vw;
+  overflow: hidden;
+}
+.gallery .scroller_inner {
+  padding-block: 1rem;
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+}
+.gallery .wins-content[data-animated=true] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+  mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+}
+.gallery .wins-content[data-animated=true] .scroller_inner {
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 100s) var(--_animation-direction, forwards) linear infinite;
+  width: -moz-max-content;
+  width: max-content;
+}
+.gallery .wins-content[data-direction=right] {
+  --_animation-direction: reverse;
+}
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-50% - 0.5rem));
+  }
+}
+.gallery .form1 {
+  display: grid;
+  grid-template-columns: 22.1rem;
+  grid-template-rows: 16.5rem 22.8rem;
+  gap: 0.5rem;
+}
+.gallery .form2 {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 22.1rem;
+  grid-template-rows: 22.8rem 16.5rem;
+}
+.gallery .form1 div,
+.gallery .form2 div {
+  background-color: var(--bg-color);
+  border: 1px solid rgba(207, 255, 31, 0.2);
+  border-radius: 5.77px;
+  padding: 1rem;
+}
+.gallery .form1 div img,
+.gallery .form2 div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5.77px;
+}
+.gallery .wins-text {
+  padding: 2.5rem;
 }
 
 .section3 {
