@@ -329,7 +329,7 @@ body {
 .gallery .form1 div,
 .gallery .form2 div {
   background-color: var(--bg-color);
-  border: 1px solid rgba(207, 255, 31, 0.2);
+  border: 1px solid var(--color-green);
   border-radius: 5.77px;
   padding: 1rem;
 }
