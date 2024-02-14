@@ -181,8 +181,8 @@ body {
   left: 0;
   top: 0;
   width: 100vw;
-  height: 100%;
-  background-color: white;
+  height: 150rem;
+  background-color: rgb(255, 255, 255);
   z-index: 11;
   padding-top: 2.5rem;
   transform: translateY(-40rem);
@@ -249,7 +249,7 @@ body {
 
 .section1 {
   padding: 5rem 0 0 0;
-  background-image: linear-gradient(to bottom, transparent 91%, var(--bg-color) 9%), url(assets/G-icon.svg);
+  background-image: linear-gradient(to bottom, transparent 90%, var(--bg-color) 10%), url(assets/G-icon.svg);
   position: relative;
   overflow-y: hidden;
 }
@@ -556,4 +556,69 @@ body {
 }
 .footer .links .link-item:nth-child(4) ul a {
   color: var(--color-white);
-}/*# sourceMappingURL=style.css.map */
+}
+
+.section1-works {
+  background: url(assets/G-icon.svg);
+}
+.section1-works .titles {
+  align-items: start;
+  padding: var(--padding);
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.section1-works .titles .title-primary {
+  padding: 0;
+  font-size: 4rem;
+}
+@media screen and (max-width: 1000px) {
+  .section1-works .titles {
+    grid-template-columns: 1fr;
+    margin-bottom: 15rem;
+  }
+  .section1-works .title-primary {
+    padding: 0;
+    margin-bottom: 0rem;
+    font-size: 4rem;
+  }
+}
+
+.categories {
+  padding: var(--padding);
+  transform: translateY(-10rem);
+}
+.categories .categories-heading {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  font-size: 1.8rem;
+  border-bottom: 1px solid var(--color-green);
+}
+.categories .categories-heading li {
+  padding-bottom: 1rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+}
+.categories .categories-heading .active-category {
+  border-bottom: 1px solid var(--color-black);
+}
+.categories .hidden {
+  display: none;
+}
+.categories .works-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  padding-top: 3rem;
+}
+.categories .works-gallery img {
+  width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  .categories .works-gallery {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=styles.css.map */
