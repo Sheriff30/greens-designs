@@ -313,6 +313,7 @@ body {
   }
 }
 .section2 .slide-container {
+  display: block;
   height: 60rem;
   position: relative;
   cursor: pointer;
@@ -619,6 +620,56 @@ body {
 }
 @media screen and (max-width: 1000px) {
   .categories .works-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-content {
+  padding: var(--padding);
+}
+.project-content .category {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 3rem;
+}
+.project-content .project-name {
+  font-size: 7rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 30rem;
+  text-transform: uppercase;
+}
+.project-content .scope {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.6rem;
+}
+.project-content .scope p {
+  color: #ffffff;
+}
+.project-content .scope ul {
+  list-style: none;
+  text-transform: uppercase;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.section2-project {
+  padding: var(--padding);
+  padding-block: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+.section2-project img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .section2-project {
     grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=styles.css.map */
