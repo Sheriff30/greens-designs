@@ -139,12 +139,7 @@
       </div>
 
       <div class="contact-form">
-        <form
-          id="myForm"
-          action="mailto:Greensdesign0@gmail.com"
-          method="post"
-          enctype="text/plain"
-        >
+        <form id="myForm" action="#" method="post" enctype="text/plain">
           <div class="form-grid">
             <div class="form-item">
               <label for="name">Name</label>
@@ -280,6 +275,30 @@
 
         return isValid;
       }
+
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent form submission
+
+          // Get form data
+          var formData = new FormData(this);
+
+          // Construct email body
+          var emailBody = "";
+          formData.forEach(function (value, key) {
+            emailBody +=
+              encodeURIComponent(key) + "=" + encodeURIComponent(value) + "\n";
+          });
+
+          // Construct mailto URL with encoded data
+          var mailtoUrl =
+            "mailto:Greensdesign0@gmail.com?subject=New%20Form%20Submission&body=" +
+            encodeURIComponent(emailBody);
+
+          // Open user's email client
+          window.location.href = mailtoUrl;
+        });
     </script>
   </body>
 </html>
