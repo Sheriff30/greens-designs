@@ -661,7 +661,7 @@ body {
   padding: var(--padding);
   padding-block: 5rem;
   display: grid;
-  background-color: var(--color-white);
+  background-color: var(--bg-color);
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
 }
@@ -673,4 +673,107 @@ body {
   .section2-project {
     grid-template-columns: 1fr;
   }
+}
+.section1-contact {
+  background: url(assets/G-icon.svg);
+}
+.section1-contact .titles {
+  align-items: start;
+  padding: var(--padding);
+}
+.section1-contact .titles .title-primary {
+  padding: 0;
+  font-size: 4rem;
+}
+
+.contact-us {
+  margin: var(--padding);
+  padding: 4rem;
+  background-color: var(--color-green);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  transform: translateY(-10rem);
+  gap: 2rem;
+}
+.contact-us ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-us ul li:nth-child(1) {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.contact-us ul li {
+  font-size: 1.6rem;
+}
+.contact-us ul .contact-icon {
+  color: var(--color-black);
+  font-size: 2.5rem;
+}
+.contact-us ul .contact-icons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.contact-form {
+  padding: var(--padding);
+  transform: translateY(-5rem);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 500px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.6rem;
+}
+.form-item input,
+.form-item textarea {
+  border: none;
+  outline: none;
+  padding: 0.2rem;
+  padding-bottom: 1rem;
+  font-size: 1.6rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.353);
+}
+.form-item input:focus,
+.form-item textarea:focus {
+  border-bottom: 1px solid var(--color-green);
+}
+
+.form-btn {
+  margin-top: 5rem;
+  display: flex;
+  gap: 2rem;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: inherit;
+  align-items: center;
+  cursor: pointer;
+  padding: 1.5rem 7rem;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: transparent;
+  font-weight: bold;
+  transition: 0.3s all ease;
+}
+.form-btn:hover {
+  background-color: var(--color-black);
+  border: 1px solid var(--color-black);
+  color: var(--color-white);
 }/*# sourceMappingURL=styles.css.map */
