@@ -764,6 +764,7 @@ body {
   padding: var(--padding);
   padding-block: 5rem;
   display: grid;
+  background-color: var(--color-white);
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
 
