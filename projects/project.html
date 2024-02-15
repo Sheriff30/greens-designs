@@ -44,7 +44,6 @@
         background-size: cover;
         min-height: 100vh;
         height: 100%;
-        margin: 0; /* Remove default margin */
       }
 
       .container {
@@ -55,6 +54,7 @@
         height: 100%;
         overflow-y: scroll; /* Allow scrolling within the container */
         z-index: 1; /* Ensure content is above background */
+        -webkit-overflow-scrolling: touch;
       }
 
       .logo-project {
