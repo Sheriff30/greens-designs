@@ -250,55 +250,45 @@
       document
         .getElementById("myForm")
         .addEventListener("submit", function (event) {
+          event.preventDefault();
+
           if (!validateForm()) {
-            event.preventDefault();
+            return;
           }
+
+          var formData = new FormData(this);
+
+          var emailBody = "";
+
+          formData.forEach(function (value, key) {
+            emailBody +=
+              encodeURIComponent(key) + "=" + encodeURIComponent(value) + "\n";
+          });
+
+          var mailtoUrl =
+            "mailto:Greensdesign0@gmail.com?subject=New%20Form%20Submission&body=" +
+            encodeURIComponent(emailBody);
+
+          window.location.href = mailtoUrl;
         });
 
       document
         .getElementById("phone")
         .addEventListener("input", function (event) {
           const phoneInput = event.target;
+
           const phoneValue = phoneInput.value.trim();
           const filteredValue = phoneValue.replace(/\D/g, "");
+
           phoneInput.value = filteredValue;
         });
 
       function validateForm() {
-        let isValid = true;
-
         const emailInput = document.getElementById("email");
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(emailInput.value.trim())) {
-          isValid = false;
-        }
 
-        return isValid;
+        return emailRegex.test(emailInput.value.trim());
       }
-
-      document
-        .getElementById("myForm")
-        .addEventListener("submit", function (event) {
-          event.preventDefault(); // Prevent form submission
-
-          // Get form data
-          var formData = new FormData(this);
-
-          // Construct email body
-          var emailBody = "";
-          formData.forEach(function (value, key) {
-            emailBody +=
-              encodeURIComponent(key) + "=" + encodeURIComponent(value) + "\n";
-          });
-
-          // Construct mailto URL with encoded data
-          var mailtoUrl =
-            "mailto:Greensdesign0@gmail.com?subject=New%20Form%20Submission&body=" +
-            encodeURIComponent(emailBody);
-
-          // Open user's email client
-          window.location.href = mailtoUrl;
-        });
     </script>
   </body>
 </html>
