@@ -58,6 +58,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (type && contentFunctions[type]) {
     contentFunctions[type]();
+  } else {
+    if (type !== null) {
+      window.location.href = "notFound.html";
+    }
   }
 });
 
@@ -70,3 +74,5 @@ function addImagesToProject(imageUrls) {
     projectElement.appendChild(img);
   });
 }
+
+console.log(window.location.pathname);
