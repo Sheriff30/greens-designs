@@ -157,7 +157,6 @@ body {
   .info-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 2rem;
 
     .title-primary {
@@ -535,9 +534,10 @@ body {
 
   .about {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding: 0rem;
     margin: 0;
+    gap: 3rem;
 
     @media screen and (max-width: 1000px) {
       & {
@@ -726,6 +726,7 @@ body {
 
 .project-content {
   padding: var(--padding);
+  padding-bottom: 5rem;
 
   .category {
     font-size: 2rem;

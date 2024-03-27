@@ -149,7 +149,6 @@ body {
 .about .info-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 2rem;
 }
 .about .info-item .title-primary {
@@ -467,9 +466,10 @@ body {
 }
 .section3 .about {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   padding: 0rem;
   margin: 0;
+  gap: 3rem;
 }
 @media screen and (max-width: 1000px) {
   .section3 .about {
@@ -626,6 +626,7 @@ body {
 
 .project-content {
   padding: var(--padding);
+  padding-bottom: 5rem;
 }
 .project-content .category {
   font-size: 2rem;
