@@ -16,9 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
         "interior",
         "interior1",
         "interior2",
-        "interior3",
+        "interior4",
         "/assets/section1img.jpg",
-        ["/assets/section1img.jpg", "/assets/section1img.jpg"]
+        [
+          "/assets/section1img.jpg",
+          "/assets/section1img.jpg",
+          "/assets/section1img.jpg",
+        ]
       );
     },
     landscape: function () {
@@ -60,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
     contentFunctions[type]();
   } else {
     if (type !== null) {
-      window.location.href = "notFound.html";
+      window.location.pathname = "notFound.html";
     }
   }
 });
@@ -74,5 +78,3 @@ function addImagesToProject(imageUrls) {
     projectElement.appendChild(img);
   });
 }
-
-console.log(window.location.pathname);
