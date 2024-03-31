@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
     contentFunctions[type]();
   } else {
     if (type !== null) {
-      window.location.pathname = "hh.html";
+      window.location.pathname = "not-found.html";
     }
   }
 });
