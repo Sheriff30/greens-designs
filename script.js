@@ -56,3 +56,45 @@ function handleCategoryClick(event) {
 categories.forEach((category) => {
   category.addEventListener("click", handleCategoryClick);
 });
+
+// Active Cetegories from Home page
+
+// Tabs in Works page
+const architectureCategory = document.querySelector(
+  '[data-category="architecture"]'
+);
+const commercialCategory = document.querySelector(
+  '[data-category="commercial"]'
+);
+const interiorCategory = document.querySelector('[data-category="interior"]');
+const landscapeCategory = document.querySelector('[data-category="landscape"]');
+const residentialCategory = document.querySelector(
+  '[data-category="residential"]'
+);
+
+function activeCategory(category, url) {
+  if (currentURL.includes(`${url}`)) {
+    category?.click();
+  }
+}
+
+function changeUrl(category, url) {
+  category?.addEventListener("click", function (event) {
+    event.preventDefault();
+    history.pushState({}, "", url);
+  });
+}
+
+const currentURL = window.location.href;
+
+activeCategory(architectureCategory, "architectureCategory");
+activeCategory(landscapeCategory, "landscapeCategory");
+activeCategory(interiorCategory, "interiorCategory");
+activeCategory(commercialCategory, "commercialCategory");
+activeCategory(residentialCategory, "residentialCategory");
+
+changeUrl(architectureCategory, "?type=architectureCategory");
+changeUrl(landscapeCategory, "?type=landscapeCategory");
+changeUrl(interiorCategory, "?type=interiorCategory");
+changeUrl(commercialCategory, "?type=commercialCategory");
+changeUrl(residentialCategory, "?type=residentialCategory");
