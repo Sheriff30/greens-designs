@@ -98,3 +98,12 @@ changeUrl(landscapeCategory, "?type=landscapeCategory");
 changeUrl(interiorCategory, "?type=interiorCategory");
 changeUrl(commercialCategory, "?type=commercialCategory");
 changeUrl(residentialCategory, "?type=residentialCategory");
+
+//
+
+let urlParams = new URLSearchParams(window.location.search);
+let type = urlParams.get("type");
+
+if (window.location.pathname === "/project.html" && !type) {
+  window.location.replace("index.html");
+}
