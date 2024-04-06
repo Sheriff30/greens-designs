@@ -107,3 +107,28 @@ let type = urlParams.get("type");
 if (window.location.pathname === "/project.html" && !type) {
   window.location.replace("index.html");
 }
+
+// Function to check if a page exists
+function checkPageExistence(url) {
+  return fetch(url)
+    .then((response) => {
+      // If the response status is 200, page exists
+      if (response.ok) {
+        return true;
+      } else if (response.status === 404) {
+        return false;
+      }
+    })
+    .catch((error) => {
+      console.error("Error checking page existence:", error);
+      return false;
+    });
+}
+
+// Check if the requested page exists
+checkPageExistence(window.location.href).then((pageExists) => {
+  if (!pageExists) {
+    // Redirect to the not-found.html page
+    window.location.href = "not-found.html";
+  }
+});
