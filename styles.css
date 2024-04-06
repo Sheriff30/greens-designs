@@ -840,6 +840,9 @@ body {
 .step .step-img {
   max-width: 55rem;
   height: 40rem;
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
 }
 .step .step-img img {
   height: 100%;
