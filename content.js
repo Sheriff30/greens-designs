@@ -10,33 +10,46 @@ document.addEventListener("DOMContentLoaded", function () {
   const type = urlParams.get("type");
 
   const contentFunctions = {
-    interior: function () {
+    beachbar: function () {
       setProjectContent(
-        "interior",
-        "interior",
-        "interior1",
-        "interior2",
-        "interior4",
-        "/assets/section1img.jpg",
+        "Architecture",
+        "Beach bar",
+        "Beach bar",
+        "Beach bar",
+        "Beach bar",
+        "/projects-img/Beachbar/1.jpg",
         [
-          "/assets/section1img.jpg",
-          "/assets/section1img.jpg",
-          "/assets/section1img.jpg",
+          "/projects-img/Beachbar/1.jpg",
+          "/projects-img/Beachbar/2 PH.jpg",
+          "/projects-img/Beachbar/5PH.jpg",
+          "/projects-img/Beachbar/6PH.jpg",
+          "/projects-img/Beachbar/923ee08fb5705c5cf56786a92a060531l-w1205048523xd-w1020_h770_q80.jpg",
         ]
       );
     },
-    landscape: function () {
+    beachhouse: function () {
       setProjectContent(
-        "Landscape",
-        "landscape",
-        "Landscape1",
-        "Landscape2",
-        "Landscape3",
-        "/assets/section1img.jpg",
+        "Architecture",
+        "Beach house",
+        "Beach house",
+        "Beach house",
+        "Beach house",
+        "/projects-img/BeachHouse/8.jpg",
+        ["/projects-img/BeachHouse/7.jpg", "/projects-img/BeachHouse/Final.jpg"]
+      );
+    },
+    palace: function () {
+      setProjectContent(
+        "Architecture",
+        "palace",
+        "palace",
+        "palace",
+        "palace",
+        "/projects-img/Palace/2_.jpg",
         [
-          "/assets/section1img.jpg",
-          "/assets/section1img.jpg",
-          "/assets/section1img.jpg",
+          "/projects-img/palace/4_.jpg",
+          "/projects-img/palace/5_.jpg",
+          "/projects-img/Palace/6_.jpg",
         ]
       );
     },
