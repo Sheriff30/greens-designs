@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const scope1 = document.querySelector(".scope1");
   const scope2 = document.querySelector(".scope2");
   const scope3 = document.querySelector(".scope3");
+  const loading = document.querySelector(".loading");
 
   const urlParams = new URLSearchParams(window.location.search);
   const type = urlParams.get("type");
@@ -64,13 +65,44 @@ document.addEventListener("DOMContentLoaded", function () {
     backgroundImageUrl,
     imageUrls
   ) {
+    // Show loading element
+    loading.style.display = "flex";
+
+    // Hide loading element after background image is loaded
+    const backgroundImage = new Image();
+    backgroundImage.onload = function () {
+      hideLoadingElement();
+    };
+    backgroundImage.src = backgroundImageUrl;
+
+    // Set project content
     category.innerText = categoryText;
     projectName.innerText = projectNameText;
     scope1.innerText = scope1Text;
     scope2.innerText = scope2Text;
     scope3.innerText = scope3Text;
     section1Project.style.backgroundImage = `linear-gradient(to right bottom, rgba(25, 42, 22, 0.8), rgba(25, 42, 22, 0.5)), url(${backgroundImageUrl})`;
-    addImagesToProject(imageUrls);
+
+    // Hide loading element after all images are loaded
+    let loadedImages = 0;
+    const totalImages = imageUrls.length;
+
+    function imageLoaded() {
+      loadedImages++;
+      if (loadedImages === totalImages) {
+        hideLoadingElement();
+      }
+    }
+
+    imageUrls.forEach((url) => {
+      const image = new Image();
+      image.onload = imageLoaded;
+      image.src = url;
+    });
+  }
+
+  function hideLoadingElement() {
+    loading.style.display = "none";
   }
 
   if (type && contentFunctions[type]) {
