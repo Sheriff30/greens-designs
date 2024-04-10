@@ -47,8 +47,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "palace",
         "/projects-img/Palace/2_.jpg",
         [
-          "/projects-img/palace/4_.jpg",
-          "/projects-img/palace/5_.jpg",
+          "/projects-img/Palace/4_.jpg",
+          "/projects-img/Palace/5_.jpg",
           "/projects-img/Palace/6_.jpg",
         ]
       );
