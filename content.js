@@ -68,13 +68,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Show loading element
     loading.style.display = "flex";
 
-    // Hide loading element after background image is loaded
-    const backgroundImage = new Image();
-    backgroundImage.onload = function () {
-      hideLoadingElement();
-    };
-    backgroundImage.src = backgroundImageUrl;
-
     // Set project content
     category.innerText = categoryText;
     projectName.innerText = projectNameText;
@@ -83,26 +76,32 @@ document.addEventListener("DOMContentLoaded", function () {
     scope3.innerText = scope3Text;
     section1Project.style.backgroundImage = `linear-gradient(to right bottom, rgba(25, 42, 22, 0.8), rgba(25, 42, 22, 0.5)), url(${backgroundImageUrl})`;
 
-    // Hide loading element after all images are loaded
-    let loadedImages = 0;
+    // Function to check if all images are loaded
+    let imagesLoaded = 0;
     const totalImages = imageUrls.length;
 
-    function imageLoaded() {
-      loadedImages++;
-      if (loadedImages === totalImages) {
-        hideLoadingElement();
+    const checkImagesLoaded = () => {
+      imagesLoaded++;
+      if (imagesLoaded === totalImages) {
+        // Hide loading element after all images are loaded
+        loading.style.display = "none";
       }
-    }
+    };
 
+    // Add event listener to background image
+    const backgroundImg = new Image();
+    backgroundImg.onload = checkImagesLoaded;
+    backgroundImg.src = backgroundImageUrl;
+
+    // Add event listener to each image in imageUrls
     imageUrls.forEach((url) => {
-      const image = new Image();
-      image.onload = imageLoaded;
-      image.src = url;
+      const img = new Image();
+      img.onload = checkImagesLoaded;
+      img.src = url;
     });
-  }
 
-  function hideLoadingElement() {
-    loading.style.display = "none";
+    // Add images to project
+    addImagesToProject(imageUrls);
   }
 
   if (type && contentFunctions[type]) {
