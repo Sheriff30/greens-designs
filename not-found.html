@@ -3,10 +3,123 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Greens Designs</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/title.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="myriad-pro.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script defer src="script.js"></script>
+
+    <style>
+      .not-found {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: center;
+      }
+
+      .notfound-title {
+        font-size: 4rem;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .return {
+        font-size: 1.5rem;
+      }
+    </style>
   </head>
   <body>
-    <p>not found</p>
-    <a href="index.html">Return to home</a>
+    <div class="menubarPage">
+      <div class="header">
+        <div class="logo">
+          <a href="#"><img src="assets/logo.png" alt="" /></a>
+        </div>
+        <div class="cross-icon"><ion-icon name="close-outline"></ion-icon></div>
+      </div>
+      <div class="nav">
+        <div class="nav_links">
+          <li>
+            <a href="#">We Are</a>
+          </li>
+          <li>
+            <a href="#">Our Work</a>
+          </li>
+          <li>
+            <a href="#">Our Studios</a>
+          </li>
+          <li>
+            <a href="#">Our Humans</a>
+          </li>
+
+          <li>
+            <a href="#">Our Press</a>
+          </li>
+          <li>
+            <a href="contact-us.html">Talk to Us</a>
+          </li>
+        </div>
+
+        <div class="nav_info">
+          <ul>
+            <p>Address</p>
+            <li>Address</li>
+          </ul>
+
+          <ul>
+            <p>Socials</p>
+
+            <a href="#">Pinterest</a>
+            <a href="#">Instagram</a>
+            <a href="#">Linkedin</a>
+            <a href="#">Facebook</a>
+          </ul>
+
+          <ul>
+            <p>Contact Us</p>
+
+            <li>example@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <!-- SECTION! -->
+      <div class="section1-notfound">
+        <div class="not-found">
+          <p class="notfound-title">
+            Oops! It seems that the page you're looking for doesn't exist.
+          </p>
+          <a class="return" href="/index.html">RETURN TO HOME PAGE</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

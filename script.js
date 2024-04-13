@@ -68,9 +68,7 @@ const commercialCategory = document.querySelector(
 );
 const interiorCategory = document.querySelector('[data-category="interior"]');
 const landscapeCategory = document.querySelector('[data-category="landscape"]');
-const residentialCategory = document.querySelector(
-  '[data-category="residential"]'
-);
+const residentialCategory = document.querySelector('[data-category="uniqe"]');
 
 function activeCategory(category, url) {
   if (currentURL.includes(`${url}`)) {
@@ -91,13 +89,13 @@ activeCategory(architectureCategory, "architectureCategory");
 activeCategory(landscapeCategory, "landscapeCategory");
 activeCategory(interiorCategory, "interiorCategory");
 activeCategory(commercialCategory, "commercialCategory");
-activeCategory(residentialCategory, "residentialCategory");
+activeCategory(residentialCategory, "uniqeCategory");
 
 changeUrl(architectureCategory, "?type=architectureCategory");
 changeUrl(landscapeCategory, "?type=landscapeCategory");
 changeUrl(interiorCategory, "?type=interiorCategory");
 changeUrl(commercialCategory, "?type=commercialCategory");
-changeUrl(residentialCategory, "?type=residentialCategory");
+changeUrl(residentialCategory, "?type=uniqeCategory");
 
 //
 
