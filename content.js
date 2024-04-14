@@ -398,6 +398,24 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
       );
     },
+    abdelkarim: function () {
+      setProjectContent(
+        "Interior",
+        "Abdelkarim's",
+        "Abdelkarim's",
+        "Abdelkarim's",
+        "Abdelkarim's",
+        "/projects-img/Interior/Abdelkarim/1.jpg",
+        [
+          "/projects-img/Interior/Abdelkarim/2.jpg",
+          "/projects-img/Interior/Abdelkarim/3.jpg",
+          "/projects-img/Interior/Abdelkarim/4.jpg",
+          "/projects-img/Interior/Abdelkarim/5.jpg",
+          "/projects-img/Interior/Abdelkarim/6.jpg",
+          "/projects-img/Interior/Abdelkarim/7.jpg",
+        ]
+      );
+    },
     liors: function () {
       setProjectContent(
         "Interior",
