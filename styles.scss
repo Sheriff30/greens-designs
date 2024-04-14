@@ -663,6 +663,14 @@ body {
         }
       }
     }
+    .link-item:nth-child(2) {
+      ul {
+        color: var(--color-white);
+        opacity: 0.5;
+        font-size: 1.8rem;
+      }
+    }
+
     .link-item:nth-child(4) {
       ul {
         display: flex;
