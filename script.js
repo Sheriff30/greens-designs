@@ -105,3 +105,53 @@ let type = urlParams.get("type");
 if (window.location.pathname === "/project.html" && !type) {
   window.location.replace("index.html");
 }
+
+// Hover Section 1
+
+const archhighlight = document.querySelector(".arch-highlight");
+
+// Add event listeners for mouse enter and mouse leave
+archhighlight.addEventListener("mouseenter", function () {
+  // Change text color on mouse enter
+  document.querySelector(".section1-img img").src =
+    "/projects-img/Achitecture/Urban/1.jpg";
+});
+
+archhighlight.addEventListener("mouseleave", function () {
+  // Change text color back on mouse leave
+  document.querySelector(".section1-img img").src =
+    "/assets/Get Inspired images/img5.jpg";
+});
+
+// /////////////////////
+
+const landhighlight = document.querySelector(".land-highlight");
+
+// Add event listeners for mouse enter and mouse leave
+landhighlight.addEventListener("mouseenter", function () {
+  // Change text color on mouse enter
+  document.querySelector(".section1-img img").src =
+    "/projects-img/Landscape/SheikhAhmad/Main.jpg";
+});
+
+landhighlight.addEventListener("mouseleave", function () {
+  // Change text color back on mouse leave
+  document.querySelector(".section1-img img").src =
+    "/assets/Get Inspired images/img5.jpg";
+});
+
+// // //////////////////
+const inthighlight = document.querySelector(".int-highlight");
+
+// Add event listeners for mouse enter and mouse leave
+inthighlight.addEventListener("mouseenter", function () {
+  // Change text color on mouse enter
+  document.querySelector(".section1-img img").src =
+    "/projects-img/Interior/BohemianApartment/1.jpg";
+});
+
+inthighlight.addEventListener("mouseleave", function () {
+  // Change text color back on mouse leave
+  document.querySelector(".section1-img img").src =
+    "/assets/Get Inspired images/img5.jpg";
+});

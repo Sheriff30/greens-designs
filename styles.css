@@ -278,9 +278,24 @@ body {
   margin-left: auto;
   width: 100rem;
   max-width: 100%;
-  max-height: 60rem;
+  height: 60rem;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (max-width: 1000px) {
+  .section1 .section1-img img {
+    height: 50rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .section1 .section1-img img {
+    height: 40rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section1 .section1-img img {
+    height: 35rem;
+  }
 }
 
 .section2 {

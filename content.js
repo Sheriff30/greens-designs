@@ -210,7 +210,485 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
       );
     },
+
     // //////////////////////////////////
+    citracc: function () {
+      setProjectContent(
+        "Commercial",
+        "Citra's Community Center",
+        "Citra's Community Center",
+        "Citra's Community Center",
+        "Citra's Community Center",
+        "/projects-img/Commercial/CommunityCenter/main.jpg",
+        [
+          "/projects-img/Commercial/CommunityCenter/1_.jpg",
+          "/projects-img/Commercial/CommunityCenter/2_.jpg",
+          "/projects-img/Commercial/CommunityCenter/3_.jpg",
+          "/projects-img/Commercial/CommunityCenter/4_.jpg",
+          "/projects-img/Commercial/CommunityCenter/5_.jpg",
+          "/projects-img/Commercial/CommunityCenter/6_.jpg",
+          "/projects-img/Commercial/CommunityCenter/11_.jpg",
+        ]
+      );
+    },
+    inomjonschool: function () {
+      setProjectContent(
+        "Commercial",
+        "Inomjon School",
+        "Inomjon School",
+        "Inomjon School",
+        "Inomjon School",
+        "/projects-img/Commercial/InomjonSchool/Main.jpg",
+        [
+          "/projects-img/Commercial/InomjonSchool/8.jpg",
+          "/projects-img/Commercial/InomjonSchool/2.jpg",
+          "/projects-img/Commercial/InomjonSchool/3.jpg",
+          "/projects-img/Commercial/InomjonSchool/4.jpg",
+          "/projects-img/Commercial/InomjonSchool/5.jpg",
+          "/projects-img/Commercial/InomjonSchool/9.jpg",
+          "/projects-img/Commercial/InomjonSchool/7.jpg",
+          "/projects-img/Commercial/InomjonSchool/11.jpg",
+          "/projects-img/Commercial/InomjonSchool/12.jpg",
+          "/projects-img/Commercial/InomjonSchool/13.jpg",
+          "/projects-img/Commercial/InomjonSchool/14.jpg",
+          "/projects-img/Commercial/InomjonSchool/15.jpg",
+        ]
+      );
+    },
+    fashionschool: function () {
+      setProjectContent(
+        "Commercial",
+        "Fashion School UK",
+        "Fashion School UK",
+        "Fashion School UK",
+        "Fashion School UK",
+        "/projects-img/Commercial/FashionSchoolUK/Main.jpg",
+        [
+          "/projects-img/Commercial/FashionSchoolUK/1.jpg",
+          "/projects-img/Commercial/FashionSchoolUK/2.jpg",
+          "/projects-img/Commercial/FashionSchoolUK/3.jpg",
+          "/projects-img/Commercial/FashionSchoolUK/4.jpg",
+          "/projects-img/Commercial/FashionSchoolUK/5.jpg",
+          "/projects-img/Commercial/FashionSchoolUK/9.jpg",
+          "/projects-img/Commercial/FashionSchoolUK/7.jpg",
+        ]
+      );
+    },
+    nursinghome: function () {
+      setProjectContent(
+        "Commercial",
+        "Nursing Home",
+        "Nursing Home",
+        "Nursing Home",
+        "Nursing Home",
+        "/projects-img/Commercial/NursingHome/Main.jpg",
+        [
+          "/projects-img/Commercial/NursingHome/1.jpg",
+          "/projects-img/Commercial/NursingHome/2.jpg",
+          "/projects-img/Commercial/NursingHome/3.jpg",
+          "/projects-img/Commercial/NursingHome/4.jpg",
+        ]
+      );
+    },
+    theinvestor: function () {
+      setProjectContent(
+        "Commercial",
+        "The investor",
+        "The investor",
+        "The investor",
+        "The investor",
+        "/projects-img/Commercial/Theinvestor/Main.jpg",
+        [
+          "/projects-img/Commercial/Theinvestor/1.jpg",
+          "/projects-img/Commercial/Theinvestor/10.jpg",
+          "/projects-img/Commercial/Theinvestor/11.jpg",
+          "/projects-img/Commercial/Theinvestor/12.jpg",
+          "/projects-img/Commercial/Theinvestor/13.jpg",
+          "/projects-img/Commercial/Theinvestor/2.jpg",
+        ]
+      );
+    },
+    theresort: function () {
+      setProjectContent(
+        "Commercial",
+        "The Resort",
+        "The Resort",
+        "The Resort",
+        "The Resort",
+        "/projects-img/Commercial/TheResort/Main.jpg",
+        [
+          "/projects-img/Commercial/TheResort/1.jpg",
+          "/projects-img/Commercial/TheResort/2.jpg",
+          "/projects-img/Commercial/TheResort/3.jpg",
+          "/projects-img/Commercial/TheResort/4.jpg",
+          "/projects-img/Commercial/TheResort/5.jpg",
+          "/projects-img/Commercial/TheResort/6.jpg",
+        ]
+      );
+    },
+    theinvestor: function () {
+      setProjectContent(
+        "Commercial",
+        "The investor",
+        "The investor",
+        "The investor",
+        "The investor",
+        "/projects-img/Commercial/TheWoodCenterUK/Main.jpg",
+        [
+          "/projects-img/Commercial/TheWoodCenterUK/1.jpg",
+          "/projects-img/Commercial/TheWoodCenterUK/10_.jpg",
+          "/projects-img/Commercial/TheWoodCenterUK/11_.jpg",
+          "/projects-img/Commercial/TheWoodCenterUK/12_.jpg",
+          "/projects-img/Commercial/TheWoodCenterUK/13_.jpg",
+          "/projects-img/Commercial/TheWoodCenterUK/5_.jpg",
+        ]
+      );
+    },
+    yogapalace: function () {
+      setProjectContent(
+        "Commercial",
+        "Yoga Palace",
+        "Yoga Palace",
+        "Yoga Palace",
+        "Yoga Palace",
+        "/projects-img/Commercial/YogaPalace/Main.jpg",
+        [
+          "/projects-img/Commercial/YogaPalace/1.jpg",
+          "/projects-img/Commercial/YogaPalace/2.jpg",
+          "/projects-img/Commercial/YogaPalace/3.jpg",
+          "/projects-img/Commercial/YogaPalace/4.jpg",
+          "/projects-img/Commercial/YogaPalace/5.jpg",
+          "/projects-img/Commercial/YogaPalace/6.jpg",
+        ]
+      );
+    },
+    ZYDhotel: function () {
+      setProjectContent(
+        "Commercial",
+        "ZYD Hotel",
+        "ZYD Hotel",
+        "ZYD Hotel",
+        "ZYD Hotel",
+        "/projects-img/Commercial/ZYDHotel/Main.jpg",
+        [
+          "/projects-img/Commercial/ZYDHotel/1.jpg",
+          "/projects-img/Commercial/ZYDHotel/2.jpg",
+          "/projects-img/Commercial/ZYDHotel/3.jpg",
+          "/projects-img/Commercial/ZYDHotel/4.jpg",
+          "/projects-img/Commercial/ZYDHotel/5.jpg",
+          "/projects-img/Commercial/ZYDHotel/6.jpg",
+        ]
+      );
+    },
+    bohemianapartment: function () {
+      setProjectContent(
+        "Interior",
+        "Bohemian Apartment",
+        "Bohemian Apartment",
+        "Bohemian Apartment",
+        "Bohemian Apartment",
+        "/projects-img/Interior/BohemianApartment/1.jpg",
+        [
+          "/projects-img/Interior/BohemianApartment/2.jpg",
+          "/projects-img/Interior/BohemianApartment/3.jpg",
+          "/projects-img/Interior/BohemianApartment/4.jpg",
+          "/projects-img/Interior/BohemianApartment/5.jpg",
+          "/projects-img/Interior/BohemianApartment/6.jpg",
+          "/projects-img/Interior/BohemianApartment/7.jpg",
+        ]
+      );
+    },
+    liors: function () {
+      setProjectContent(
+        "Interior",
+        "Lior's",
+        "Lior's",
+        "Lior's",
+        "Lior's",
+        "/projects-img/Interior/Liors/1.jpg",
+        [
+          "/projects-img/Interior/Liors/2.jpg",
+          "/projects-img/Interior/Liors/3.jpg",
+          "/projects-img/Interior/Liors/4.jpg",
+          "/projects-img/Interior/Liors/5.jpg",
+        ]
+      );
+    },
+    liors: function () {
+      setProjectContent(
+        "Interior",
+        "Lior's",
+        "Lior's",
+        "Lior's",
+        "Lior's",
+        "/projects-img/Interior/liors/1.jpg",
+        [
+          "/projects-img/Interior/liors/2.jpg",
+          "/projects-img/Interior/liors/3.jpg",
+          "/projects-img/Interior/liors/4.jpg",
+          "/projects-img/Interior/liors/5.jpg",
+        ]
+      );
+    },
+    ozosapartment: function () {
+      setProjectContent(
+        "Interior",
+        "Ozos Apartment",
+        "Ozos Apartment",
+        "Ozos Apartment",
+        "Ozos Apartment",
+        "/projects-img/Interior/OzosApartment/1.jpg",
+        [
+          "/projects-img/Interior/OzosApartment/2.jpg",
+          "/projects-img/Interior/OzosApartment/3.jpg",
+          "/projects-img/Interior/OzosApartment/4.jpg",
+          "/projects-img/Interior/OzosApartment/5.jpg",
+          "/projects-img/Interior/OzosApartment/6.jpg",
+        ]
+      );
+    },
+    theboss: function () {
+      setProjectContent(
+        "Interior",
+        "The Boss",
+        "The Boss",
+        "The Boss",
+        "The Boss",
+        "/projects-img/Interior/TheBoss/1.jpg",
+        [
+          "/projects-img/Interior/TheBoss/2.jpg",
+          "/projects-img/Interior/TheBoss/3.jpg",
+          "/projects-img/Interior/TheBoss/4.jpg",
+          "/projects-img/Interior/TheBoss/5.jpg",
+          "/projects-img/Interior/TheBoss/6.jpg",
+          "/projects-img/Interior/TheBoss/7.jpg",
+        ]
+      );
+    },
+    thecanadians: function () {
+      setProjectContent(
+        "Interior",
+        "The Canadians",
+        "The Canadians",
+        "The Canadians",
+        "The Canadians",
+        "/projects-img/Interior/TheCanadians/1.jpg",
+        [
+          "/projects-img/Interior/TheCanadians/2.jpg",
+          "/projects-img/Interior/TheCanadians/3.jpg",
+          "/projects-img/Interior/TheCanadians/4.jpg",
+        ]
+      );
+    },
+    theclassic: function () {
+      setProjectContent(
+        "Interior",
+        "The Classic",
+        "The Classic",
+        "The Classic",
+        "The Classic",
+        "/projects-img/Interior/TheClassic/1.jpg",
+        [
+          "/projects-img/Interior/TheClassic/2.jpg",
+          "/projects-img/Interior/TheClassic/3.jpg",
+          "/projects-img/Interior/TheClassic/4.jpg",
+          "/projects-img/Interior/TheClassic/5.jpg",
+          "/projects-img/Interior/TheClassic/6.jpg",
+        ]
+      );
+    },
+    theehabs: function () {
+      setProjectContent(
+        "Interior",
+        "The Ehabs",
+        "The Ehabs",
+        "The Ehabs",
+        "The Ehabs",
+        "/projects-img/Interior/TheEhabs/1.jpg",
+        [
+          "/projects-img/Interior/TheEhabs/2.jpg",
+          "/projects-img/Interior/TheEhabs/3.jpg",
+          "/projects-img/Interior/TheEhabs/4.jpg",
+          "/projects-img/Interior/TheEhabs/5.jpg",
+          "/projects-img/Interior/TheEhabs/7.jpg",
+          "/projects-img/Interior/TheEhabs/8.jpg",
+        ]
+      );
+    },
+    witletstudio: function () {
+      setProjectContent(
+        "Interior",
+        "Witlet Studio",
+        "Witlet Studio",
+        "Witlet Studio",
+        "Witlet Studio",
+        "/projects-img/Interior/WitletStudio/1.jpg",
+        [
+          "/projects-img/Interior/WitletStudio/2.jpg",
+          "/projects-img/Interior/WitletStudio/3.jpg",
+          "/projects-img/Interior/WitletStudio/4.jpg",
+          "/projects-img/Interior/WitletStudio/5.jpg",
+          "/projects-img/Interior/WitletStudio/7.jpg",
+          "/projects-img/Interior/WitletStudio/8.jpg",
+          "/projects-img/Interior/WitletStudio/9.jpg",
+        ]
+      );
+    },
+    arshad: function () {
+      setProjectContent(
+        "Landscape",
+        "Arshad's",
+        "Arshad's",
+        "Arshad's",
+        "Arshad's",
+        "/projects-img/Landscape/Arshad_s/Main.jpg",
+        [
+          "/projects-img/Landscape/Arshad_s/2.jpg",
+          "/projects-img/Landscape/Arshad_s/3.jpg",
+          "/projects-img/Landscape/Arshad_s/4.jpg",
+          "/projects-img/Landscape/Arshad_s/7.jpg",
+          "/projects-img/Landscape/Arshad_s/8.jpg",
+          "/projects-img/Landscape/Arshad_s/9.jpg",
+        ]
+      );
+    },
+    augustyard: function () {
+      setProjectContent(
+        "Landscape",
+        "August's Yard",
+        "August's Yard",
+        "August's Yard",
+        "August's Yard",
+        "/projects-img/Landscape/August_sYard/Main.jpg",
+        [
+          "/projects-img/Landscape/August_sYard/1_.jpg",
+          "/projects-img/Landscape/August_sYard/10_.jpg",
+          "/projects-img/Landscape/August_sYard/12_.jpg",
+          "/projects-img/Landscape/August_sYard/13.jpg",
+          "/projects-img/Landscape/August_sYard/3.jpg",
+          "/projects-img/Landscape/August_sYard/4_.jpg",
+        ]
+      );
+    },
+    chris: function () {
+      setProjectContent(
+        "Landscape",
+        "Chris's",
+        "Chris's",
+        "Chris's",
+        "Chris's",
+        "/projects-img/Landscape/Chris_s/Main.jpg",
+        [
+          "/projects-img/Landscape/Chris_s/1_.jpg",
+          "/projects-img/Landscape/Chris_s/12_.jpg",
+          "/projects-img/Landscape/Chris_s/4_.jpg",
+          "/projects-img/Landscape/Chris_s/16.jpg",
+          "/projects-img/Landscape/Chris_s/17.jpg",
+          "/projects-img/Landscape/Chris_s/3_.jpg",
+        ]
+      );
+    },
+    karim: function () {
+      setProjectContent(
+        "Landscape",
+        "Karim's",
+        "Karim's",
+        "Karim's",
+        "Karim's",
+        "/projects-img/Landscape/Karim_s/Main.jpg",
+        [
+          "/projects-img/Landscape/Karim_s/1.jpg",
+          "/projects-img/Landscape/Karim_s/2.jpg",
+          "/projects-img/Landscape/Karim_s/3.jpg",
+          "/projects-img/Landscape/Karim_s/4.jpg",
+          "/projects-img/Landscape/Karim_s/5.jpg",
+          "/projects-img/Landscape/Karim_s/6.jpg",
+        ]
+      );
+    },
+    sheikhahmad: function () {
+      setProjectContent(
+        "Landscape",
+        "Sheikh Ahmad",
+        "Sheikh Ahmad",
+        "Sheikh Ahmad",
+        "Sheikh Ahmad",
+        "/projects-img/Landscape/SheikhAhmad/Main.jpg",
+        [
+          "/projects-img/Landscape/SheikhAhmad/1.jpg",
+          "/projects-img/Landscape/SheikhAhmad/2.jpg",
+          "/projects-img/Landscape/SheikhAhmad/3.jpg",
+          "/projects-img/Landscape/SheikhAhmad/4.jpg",
+          "/projects-img/Landscape/SheikhAhmad/5.jpg",
+        ]
+      );
+    },
+    sydney: function () {
+      setProjectContent(
+        "Landscape",
+        "Sydney's",
+        "Sydney's",
+        "Sydney's",
+        "Sydney's",
+        "/projects-img/Landscape/Sydney_s/Main.jpg",
+        [
+          "/projects-img/Landscape/Sydney_s/1.jpg",
+          "/projects-img/Landscape/Sydney_s/3.jpg",
+          "/projects-img/Landscape/Sydney_s/4.jpg",
+          "/projects-img/Landscape/Sydney_s/9.jpg",
+        ]
+      );
+    },
+    thesamuels: function () {
+      setProjectContent(
+        "Landscape",
+        "The Samuels",
+        "The Samuels",
+        "The Samuels",
+        "The Samuels",
+        "/projects-img/Landscape/TheSamuels/Main.jpg",
+        [
+          "/projects-img/Landscape/TheSamuels/1PH.jpg",
+          "/projects-img/Landscape/TheSamuels/2PH.jpg",
+          "/projects-img/Landscape/TheSamuels/3PH.jpg",
+          "/projects-img/Landscape/TheSamuels/4PH.jpg",
+          "/projects-img/Landscape/TheSamuels/5PH.jpg",
+          "/projects-img/Landscape/TheSamuels/6PH.jpg",
+          "/projects-img/Landscape/TheSamuels/8.jpg",
+        ]
+      );
+    },
+    thesauna: function () {
+      setProjectContent(
+        "Landscape",
+        "The Sauna",
+        "The Sauna",
+        "The Sauna",
+        "The Sauna",
+        "/projects-img/Landscape/TheSauna/Main.jpg",
+        [
+          "/projects-img/Landscape/TheSauna/2_.jpg",
+          "/projects-img/Landscape/TheSauna/5_.jpg",
+          "/projects-img/Landscape/TheSauna/7_.jpg",
+        ]
+      );
+    },
+    thetank: function () {
+      setProjectContent(
+        "Landscape",
+        "The Tank",
+        "The Tank",
+        "The Tank",
+        "The Tank",
+        "/projects-img/Landscape/TheTank/Main.jpg",
+        [
+          "/projects-img/Landscape/TheTank/1.jpg",
+          "/projects-img/Landscape/TheTank/2.jpg",
+          "/projects-img/Landscape/TheTank/4.jpg",
+          "/projects-img/Landscape/TheTank/10.jpg",
+        ]
+      );
+    },
   };
 
   function setProjectContent(
