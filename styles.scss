@@ -1031,3 +1031,11 @@ a {
     text-align: center;
   }
 }
+
+.lazy {
+  opacity: 0; /* Initially hide the element */
+  transition: opacity 0.3s ease; /* Add a smooth transition */
+}
+.lazy.loaded {
+  opacity: 1; /* Show the element when loaded */
+}

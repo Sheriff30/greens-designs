@@ -753,7 +753,32 @@ function addImagesToProject(imageUrls) {
   projectElement.innerHTML = "";
   imageUrls.forEach(function (imageUrl) {
     const img = document.createElement("img");
-    img.src = imageUrl;
+    // Set the data-src attribute instead of src
+    img.setAttribute("data-src", imageUrl);
+    img.classList.add("lazy"); // Add the lazy class
     projectElement.appendChild(img);
   });
+
+  // Lazy loading implementation using IntersectionObserver
+  if ("IntersectionObserver" in window) {
+    const lazyImages = document.querySelectorAll(".lazy");
+
+    let lazyImageObserver = new IntersectionObserver(function (
+      entries,
+      observer
+    ) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target;
+          lazyImage.src = lazyImage.dataset.src; // Load the image
+          lazyImage.classList.remove("lazy"); // Remove the lazy class
+          lazyImageObserver.unobserve(lazyImage);
+        }
+      });
+    });
+
+    lazyImages.forEach(function (lazyImage) {
+      lazyImageObserver.observe(lazyImage);
+    });
+  }
 }
