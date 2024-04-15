@@ -351,9 +351,9 @@ document.addEventListener("DOMContentLoaded", function () {
         "Yoga Palace",
         "Yoga Palace",
         "Yoga Palace",
-        "/projects-img/Commercial/YogaPalace/Main.jpg",
+        "/projects-img/Commercial/YogaPalace/1.jpg",
         [
-          "/projects-img/Commercial/YogaPalace/1.jpg",
+          "/projects-img/Commercial/YogaPalace/Main.jpg",
           "/projects-img/Commercial/YogaPalace/2.jpg",
           "/projects-img/Commercial/YogaPalace/3.jpg",
           "/projects-img/Commercial/YogaPalace/4.jpg",
