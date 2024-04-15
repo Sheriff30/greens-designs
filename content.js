@@ -766,12 +766,17 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-function addImagesToProject(imageUrls) {
+async function addImagesToProject(imageUrls) {
   const projectElement = document.querySelector(".section2-project");
   projectElement.innerHTML = "";
-  imageUrls.forEach(function (imageUrl) {
+
+  const loadImage = (url) => {
     const img = document.createElement("img");
-    img.src = imageUrl;
+    img.src = url;
+    img.loading = "lazy";
+    img.decoding = "async";
     projectElement.appendChild(img);
-  });
+  };
+
+  await Promise.all(imageUrls.map(loadImage));
 }
