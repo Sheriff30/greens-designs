@@ -64,7 +64,13 @@ body {
 }
 
 .bg-green {
+  display: inline-flex;
+  overflow: hidden;
   background-image: linear-gradient(to top, var(--color-green) 50%, transparent 50%);
+}
+
+.bg-green span {
+  display: inline-block;
 }
 
 .title-primary {
@@ -270,6 +276,7 @@ body {
   cursor: pointer;
 }
 .section1 .section1-img {
+  overflow: hidden;
   display: flex;
   padding: 0rem 2rem;
   z-index: 2;
@@ -296,6 +303,10 @@ body {
   .section1 .section1-img img {
     height: 35rem;
   }
+}
+
+.section1-img img {
+  opacity: 0;
 }
 
 .section2 {
@@ -926,4 +937,12 @@ a {
 
 .lazy.loaded {
   opacity: 1; /* Show the element when loaded */
+}
+
+.text-animation {
+  display: inline-flex;
+  overflow: hidden;
+}
+.text-animation span {
+  display: inline-block;
 }/*# sourceMappingURL=styles.css.map */
