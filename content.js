@@ -212,6 +212,47 @@ document.addEventListener("DOMContentLoaded", function () {
     },
 
     // //////////////////////////////////
+    tulumhotel: function () {
+      setProjectContent(
+        "Commercial",
+        "Tulum Hotel '222 Condominiums Project!'",
+        "Tulum Hotel '222 Condominiums Project!'",
+        "Tulum Hotel '222 Condominiums Project!'",
+        "Tulum Hotel '222 Condominiums Project!'",
+        "/projects-img/Commercial/TulumHotel/1.jpg",
+        [
+          "/projects-img/Commercial/TulumHotel/2.jpg",
+          "/projects-img/Commercial/TulumHotel/3.jpg",
+          "/projects-img/Commercial/TulumHotel/4.jpg",
+          "/projects-img/Commercial/TulumHotel/5.jpg",
+          "/projects-img/Commercial/TulumHotel/6.jpg",
+          "/projects-img/Commercial/TulumHotel/7.jpg",
+          "/projects-img/Commercial/TulumHotel/8.jpg",
+          "/projects-img/Commercial/TulumHotel/9.jpg",
+          "/projects-img/Commercial/TulumHotel/10.jpg",
+          "/projects-img/Commercial/TulumHotel/11.jpg",
+          "/projects-img/Commercial/TulumHotel/12.jpg",
+          "/projects-img/Commercial/TulumHotel/13.jpg",
+          "/projects-img/Commercial/TulumHotel/14.jpg",
+          "/projects-img/Commercial/TulumHotel/15.jpg",
+          "/projects-img/Commercial/TulumHotel/16.jpg",
+          "/projects-img/Commercial/TulumHotel/17.jpg",
+          "/projects-img/Commercial/TulumHotel/18.jpg",
+          "/projects-img/Commercial/TulumHotel/19.jpg",
+          "/projects-img/Commercial/TulumHotel/20.jpg",
+          "/projects-img/Commercial/TulumHotel/21.jpg",
+          "/projects-img/Commercial/TulumHotel/22.jpg",
+          "/projects-img/Commercial/TulumHotel/23.jpg",
+          "/projects-img/Commercial/TulumHotel/24.jpg",
+          "/projects-img/Commercial/TulumHotel/25.jpg",
+          "/projects-img/Commercial/TulumHotel/26.jpg",
+          "/projects-img/Commercial/TulumHotel/27.jpg",
+          "/projects-img/Commercial/TulumHotel/28.jpg",
+          "/projects-img/Commercial/TulumHotel/29.jpg",
+          "/projects-img/Commercial/TulumHotel/30.jpg",
+        ]
+      );
+    },
     citracc: function () {
       setProjectContent(
         "Commercial",
